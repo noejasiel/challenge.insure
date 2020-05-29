@@ -1,0 +1,348 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* body {
+  background-color: ;
+} */
+
+.img_in {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+}
+.lista-2 {
+  display: none;
+}
+
+.hamburger {
+  margin-right: 1em;
+}
+.close {
+  display: none;
+  margin-right: 1em;
+}
+
+.img_logo {
+  margin: auto 1em;
+}
+.img_logo2 {
+  display: none;
+  margin: auto 1em;
+}
+ul {
+  height: 50%;
+  position: relative;
+}
+.menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: hsl(270, 9%, 17%, 0.98);
+  height: 150px;
+  height: 100vh;
+}
+#check {
+  display: none;
+}
+#check:checked ~ .menu {
+  display: block;
+  background-image: url("../images/bg-pattern-mobile-nav.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.enlace {
+  text-align: center;
+  list-style: none;
+  padding: 31px 0;
+  cursor: pointer;
+  margin: 2em 0;
+}
+.enlace:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(256, 26%, 20%);
+}
+.enlace:hover a {
+  color: hsla(256, 26%, 20%);
+}
+#check:checked ~ .img_in {
+  background-color: hsl(270, 9%, 17%, 0.98);
+}
+
+#check:checked ~ .img_in .img_logo {
+  display: none;
+}
+#check:checked ~ .img_in .img_logo2 {
+  display: block;
+}
+#check:checked ~ .img_in .hamburger {
+  display: none;
+}
+#check:checked ~ .img_in .close {
+  display: block;
+}
+/* añadir estilo al utimo a */
+.enlace-box {
+  width: 80%;
+  margin: 0 auto;
+  border: 3px solid #fff;
+  border-radius: 10px;
+}
+.a-header {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Karla", sans-serif;
+}
+/* empezamos con todo el contenido */
+.u-img {
+  max-width: 100%;
+}
+.img_2 {
+  display: none;
+}
+.first-section {
+  background-image: url("../images/bg-pattern-intro-left-mobile.svg"),
+    url("../images/bg-pattern-intro-right-mobile.svg");
+  /* background-image: url("../images/bg-pattern-intro-right-mobile.svg"); */
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, 100% 100%;
+  background-color: hsl(256, 26%, 20%);
+  width: 100%;
+  padding: 3.5em 0;
+  margin: 0;
+}
+/* .first-section {
+  background-image: url("../images/bg-pattern-intro-right-mobile.svg");
+  background-position-x: 100%;
+  background-position-y: 100%;
+} */
+.u-titulo {
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 50px;
+  padding: 0.3em;
+}
+.u-text {
+  text-align: center;
+  padding: 0 2em;
+  color: hsla(278, 8%, 72%, 0.8);
+  margin: 1em auto;
+  margin-bottom: 3em;
+  font-size: 20px;
+}
+.u-enlace {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding: 1em 2em;
+  margin: 0 auto;
+  border: 3px solid hsl(0, 0%, 98%);
+  color: hsla(278, 8%, 72%, 0.8);
+  text-decoration: none;
+  border-radius: 10px;
+}
+.u-enlace:hover {
+  color: hsla(278, 8%, 72%, 0.8);
+  background-color: hsl(0, 0%, 98%);
+}
+/* segunda section */
+.section_icons h1 {
+  color: hsl(270, 9%, 17%);
+  padding: 1em 0;
+}
+.cont-target {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding-bottom: 3em;
+}
+.target {
+  margin: 2em 0;
+}
+/* que buen hack lo del translate XDDD */
+.icono {
+  max-width: 30%;
+  margin: 0 50%;
+  transform: translateX(-50%);
+}
+.u-h2 {
+  text-align: center;
+  padding: 1em;
+}
+.text-target {
+  width: 80%;
+  margin: 0.6em auto;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  color: hsla(278, 8%, 72%, 1);
+}
+/* parte sig */
+.conteine_Pf {
+  background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-color: hsl(256, 26%, 20%);
+  padding: 2em 0;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 4em;
+}
+/* footer */
+.conteiner-footer {
+  padding: 4em;
+  background-color: hsl(0, 100%, 99%);
+  padding-top: 7em;
+  background-image: url("../images/bg-pattern-footer-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo_foot {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.redes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+  border-bottom: 1px solid gray;
+}
+.redes img {
+  padding: 0 0.5em;
+}
+.redes a:hover {
+  outline: none;
+  color: hsl(270, 9%, 17%);
+}
+.u-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  padding: 2em 0;
+}
+/* h3 */
+.u-ti-foo {
+  padding: 1.5em 0;
+  font-size: 23px;
+  color: hsla(274, 4%, 69%, 0.8);
+  text-transform: uppercase;
+}
+.enlace-footer {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0.9em 0;
+  color: black;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* la tilde slecciona a los hermanos por lo cual tube que sacar el input check para
+que seleccionara asu hermano que es el div . menu */
+@media (min-width: 375px) {
+  .u-img {
+    min-width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .u-img {
+    display: none;
+    background-image: url("../images/image-intro-desktop.jpg");
+  }
+  .img_2 {
+    display: block;
+    min-width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .pc {
+    display: flex;
+  }
+  .img_2 {
+    min-width: 50%;
+    max-height: 860px;
+  }
+  .u-titulo {
+    margin: 3em;
+  }
+  .u-tilulo_mod {
+    margin: 1em;
+  }
+  .cont-target {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5em;
+  }
+  .conteine_Pf {
+    display: flex;
+    justify-content: space-around;
+  }
+  .u-titulo-mod {
+    margin: 3em 3em;
+  }
+  .u-enlace-mod {
+    padding: 0;
+    height: 0%;
+    width: 15%;
+    margin: auto;
+    font-size: 29px;
+    padding: 1em 1em;
+  }
+
+  .lista-2 {
+    display: flex;
+    margin: 0;
+    right: 0;
+    margin-left: 40%;
+  }
+
+  .img_in {
+    display: flex;
+    justify-content: space-between;
+  }
+  .enlace {
+    padding: 0;
+    margin: 0;
+    width: 30%;
+  }
+  .a-header {
+    color: black;
+    margin: 0;
+    padding: 0;
+    padding: 0 1em;
+    width: 100%;
+  }
+  .lista-2 {
+    width: 60%;
+  }
+  /* oculte el meu por defecto */
+  .menu {
+    background: none;
+  }
+  /* para poder acomodas los elementos */
+  ul {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+  .conteiner-pie {
+    display: flex;
+  }
+}
